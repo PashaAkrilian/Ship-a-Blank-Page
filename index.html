@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimas Pasha — Portfolio Coming Soon</title>
+<meta name="description" content="Dimas Pasha — ML Engineer transitioning to Robotics Software Engineer. Portfolio launching soon.">
+<style>
+  :root {
+    --bg: #0a0e14;
+    --bg-2: #10151d;
+    --text: #eef1f6;
+    --muted: #8b93a3;
+    --accent: #35e0c9;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    background: radial-gradient(circle at 50% 20%, var(--bg-2), var(--bg) 70%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeIn 0.9s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .label {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(53, 224, 201, 0.08);
+    border: 1px solid rgba(53, 224, 201, 0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 22px;
+  }
+
+  .divider {
+    width: 64px;
+    height: 3px;
+    background: var(--accent);
+    border: none;
+    border-radius: 999px;
+    margin: 0 auto 26px;
+  }
+
+  .tagline {
+    font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 560px;
+    margin: 0 auto 32px;
+  }
+
+  .tagline strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .status {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0 0 36px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .links a:hover,
+  .links a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .links svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    opacity: 0.7;
+  }
+
+  @media (max-width: 420px) {
+    .label {
+      font-size: 0.7rem;
+      padding: 5px 12px;
+    }
+
+    .links a {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .container {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container">
+    <span class="label">ML Engineer → Robotics Software Engineer</span>
+    <h1>Dimas Pasha</h1>
+    <hr class="divider">
+    <p class="tagline">
+      I engineer <strong>reliable software for robots</strong> — from perception and motion control to system integration —
+      turning experimental hardware into robots that actually work outside the lab.
+    </p>
+    <p class="status">Portfolio launching soon. Building in public.</p>
+    <div class="links">
+      <a href="#" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.02 11.02 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35 0.5 12 0.5Z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+        </svg>
+      </a>
+    </div>
+    <footer>&copy; 2026 Dimas Pasha</footer>
+  </main>
+</body>
+</html>
